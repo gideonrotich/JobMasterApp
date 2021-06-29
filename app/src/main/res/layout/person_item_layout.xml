@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/nyuma">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Mark"
+            android:textStyle="bold"
+            android:textColor="@color/darkdarkblue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:id="@+id/appl_name">
+
+        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retail manager at JobMaster"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/appl_name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:id="@+id/appl_name_one">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preferred work rights in australia verified experience as an administration assistant"
+                android:layout_below="@id/appl_name_one"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/appl_name_two">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Profile"
+                android:textColor="@color/darkdarkblue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/appl_name_two"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/appl_name_six">
+
+            </TextView>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:text="Not Suitable"
+                android:layout_marginTop="12dp"
+                android:textSize="14sp"
+                android:id="@+id/posthustleme"
+                android:background="@drawable/edittext"
+                android:backgroundTint="@color/pink"
+                android:layout_below="@id/appl_name_six"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp">
+
+            </Button>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:text="Shortlist"
+                android:layout_marginTop="12dp"
+                android:textSize="14sp"
+                android:id="@+id/posthustlemetwo"
+                android:background="@drawable/edittext"
+                android:backgroundTint="@color/giddy"
+                android:layout_below="@id/appl_name_six"
+
+                android:layout_toRightOf="@id/posthustleme"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="16dp">
+
+            </Button>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

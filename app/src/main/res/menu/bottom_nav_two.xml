@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item
+        android:id="@+id/jobs"
+        android:title="Open Jobs"
+        android:icon="@drawable/stwo"
+        />
+    <item
+        android:id="@+id/messages"
+        android:title="Candidates"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+        />
+    <item
+        android:id="@+id/notif"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        />
+    <item
+        android:id="@+id/notifications"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        />
+
+
+
+
+</menu>

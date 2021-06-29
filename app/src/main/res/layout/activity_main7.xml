@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nyuma"
+    tools:context=".MainActivity7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/yes"
+        android:layout_marginBottom="14dp"
+        android:background="@color/nyuma">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JobMaster"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/giddy"
+            android:layout_marginTop="8dp"
+            >
+
+        </TextView>
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/optiven"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_notifications_none_24"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="14dp"
+            android:tint="@color/black"
+            android:backgroundTint="@android:color/black">
+
+        </ImageView>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/opt"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@android:color/white">
+
+        </ImageView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/gotonext"
+            android:layout_below="@+id/opt"
+            android:layout_marginTop="16dp"
+            android:textColor="#787676"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:paddingLeft="20dp"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:text="Job title, keywords, or company"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+        </Button>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_tafuta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/wditwhat">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <!--    search result recycler view-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended Jobs"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/recommendeda"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/yes">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:id="@+id/see_all"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/yes"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See all"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/seeall"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"
+
+            android:textColor="@color/darkdarkblue"
+           >
+
+        </TextView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_toRightOf="@id/seeall"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_height="30dp"
+            android:layout_marginTop="6dp"
+            app:tint="@color/darkdarkblue">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_home_t"
+        android:layout_width="match_parent"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/recommendeda"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginBottom="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggested Jobs"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/uon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/recycler_view_home_t">
+
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_uonke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/uon"
+        android:layout_marginBottom="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last search"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/lasty"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/recycler_view_uonke">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_ser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@+id/lasty"
+        android:layout_marginBottom="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Categories"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="6dp"
+        android:id="@+id/cat"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/recycler_view_ser">
+
+    </TextView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/recycler_view_ser"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See all"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/seealltwo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"
+
+            android:textColor="@color/darkdarkblue"
+            >
+
+        </TextView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_toRightOf="@id/seealltwo"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_height="30dp"
+            android:layout_marginTop="6dp"
+            app:tint="@color/darkdarkblue">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_category"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cat"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeds"
+        android:textSize="18sp"
+
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:id="@+id/ndani"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/recycler_view_category">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@+id/ndani"
+        android:layout_marginBottom="62dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
+</ScrollView>

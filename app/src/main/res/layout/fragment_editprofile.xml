@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context=".EditprofileFragment">
+
+    <ImageView
+        android:id="@+id/image_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1E88E5">
+
+    </ImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/twoo">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_top"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FullName"
+            android:id="@+id/full_name"
+            android:layout_marginLeft="56dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp">
+
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:id="@+id/revl"
+        android:layout_below="@id/image_top"
+        android:layout_centerHorizontal="true"
+
+        >
+        <LinearLayout
+            android:id="@+id/linearone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts"
+                android:textSize="16sp"
+                android:textColor="@android:color/black">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/black">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lineartwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/linearone"
+            android:layout_toRightOf="@+id/linearone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Applications"
+                android:textSize="16sp"
+                android:textColor="@android:color/black">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/black">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineathree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/lineartwo"
+            android:layout_toRightOf="@+id/linearone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saved"
+                android:textSize="16sp"
+                android:textColor="@android:color/black">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/black">
+
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/revl"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Settings"
+        android:id="@+id/btn_settings"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@drawable/ic_rectangle_loginblue">
+
+    </Button>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/kaba"
+        android:background="@android:color/black"
+        android:layout_below="@+id/btn_settings"
+        android:layout_marginTop="20dp">
+
+    </View>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/kaba"
+        android:layout_marginTop="30dp"
+        app:cardElevation="2dp"
+        android:id="@+id/cardmoja"
+        app:cardBackgroundColor="#E5EAEF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education Background"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:id="@+id/masomo"
+                android:gravity="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="80dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/masomo"
+                android:layout_marginTop="2dp"
+                android:id="@+id/picha"
+                android:src="@drawable/ic_school"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_toEndOf="@+id/picha"
+                android:layout_below="@+id/masomo"
+                android:layout_marginTop="14dp"
+                android:id="@+id/text_masomo"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/picha"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="6dp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:text="Add your Education details so that employers might find you easily">
+
+            </TextView>
+            <View
+                android:id="@+id/laini"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_masomo"
+                android:layout_marginTop="18dp"
+                android:background="@android:color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp">
+
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkdarkblue"
+                android:layout_below="@+id/laini"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+
+            </TextView>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/cardmoja"
+        android:layout_marginTop="30dp"
+        app:cardElevation="2dp"
+        android:id="@+id/cardmbili"
+        app:cardBackgroundColor="#E5EAEF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Experience"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:id="@+id/expe"
+                android:gravity="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="80dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/expe"
+                android:layout_marginTop="2dp"
+                android:id="@+id/pichambili"
+                android:src="@drawable/ic_suitcase"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_toEndOf="@+id/pichambili"
+                android:layout_below="@+id/expe"
+                android:layout_marginTop="14dp"
+                android:id="@+id/text_expe"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/pichambili"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="6dp"
+                android:text="Add your work experience so that employers might find you easily">
+
+            </TextView>
+            <View
+                android:id="@+id/lainimbili"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_expe"
+                android:layout_marginTop="18dp"
+                android:background="@android:color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp">
+
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkdarkblue"
+                android:layout_below="@+id/lainimbili"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+
+            </TextView>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/cardmbili"
+        android:layout_marginTop="30dp"
+        app:cardElevation="2dp"
+        android:id="@+id/cardtatu"
+        app:cardBackgroundColor="#E5EAEF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:id="@+id/skill"
+                android:gravity="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="80dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/skill"
+                android:layout_marginTop="2dp"
+                android:id="@+id/pichatatu"
+                android:src="@drawable/ic_skills"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_toEndOf="@+id/pichatatu"
+                android:layout_below="@+id/skill"
+                android:layout_marginTop="14dp"
+                android:id="@+id/test_skill"
+                android:textSize="12sp"
+                android:layout_marginEnd="6dp"
+                android:layout_toRightOf="@+id/pichatatu"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:text="Add your Skills and projects so that employers might find you easily">
+
+            </TextView>
+            <View
+                android:id="@+id/lainitatu"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/test_skill"
+                android:layout_marginTop="18dp"
+                android:background="@android:color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp">
+
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkdarkblue"
+                android:layout_below="@+id/lainitatu"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+
+            </TextView>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/cardtatu"
+        android:layout_marginTop="30dp"
+        app:cardElevation="2dp"
+        android:id="@+id/cardsita"
+        app:cardBackgroundColor="#E5EAEF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:id="@+id/contact"
+                android:gravity="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="80dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/contact"
+                android:layout_marginTop="1dp"
+                android:id="@+id/pichanne"
+                android:src="@drawable/ic_mail"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/pichanne"
+                android:layout_below="@+id/contact"
+                android:layout_marginTop="22dp"
+                android:id="@+id/text_contact"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/pichanne"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:text="Jobmaster@gmail.com">
+
+            </TextView>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/pichanne"
+                android:layout_marginTop="0dp"
+                android:id="@+id/pichatano"
+                android:src="@drawable/ic_call"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@+id/pichatano"
+                android:layout_below="@+id/text_contact"
+                android:layout_marginTop="32dp"
+                android:id="@+id/text_contact_two"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/pichanne"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:text="072372367">
+
+            </TextView>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+</ScrollView>

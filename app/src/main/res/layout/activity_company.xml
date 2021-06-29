@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CompanyActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_rectangle_login"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Representative Details"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/email_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fullname"
+                    android:layout_below="@+id/email_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/fullname_signuprep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_text_text"
+                    android:hint="  Fullname"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/fullname_signuprep"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/email_signuprep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password_text"
+                    android:hint="  Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/password_confirm_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/email_signuprep"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/mobile_signuprep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password_confirm_two"
+                    android:hint="  Mobile Number"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/password_tttt_com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Details"
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/mobile_signuprep"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/password_confirm_two_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Industry"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/password_tttt_com"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/techtextonetest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password_confirm_two_test"
+                    android:background="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/wapionetest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/techtextonetest"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/password_tttt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company website"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/wapionetest"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/reg_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password_tttt"
+                    android:hint="  Company website"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/reg_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/reg_signup"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reg_one"
+                    android:hint="  Company Name"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+                <TextView
+                    android:id="@+id/reg_one_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expain briefly about the company"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/reg"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/reg_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_below="@+id/reg_one_two"
+                    android:hint="  "
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Headquarters"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/reg_me"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/location_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location"
+                    android:hint="  headquarters"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/location_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Founded in which year"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/location_one"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/location_one_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_test"
+                    android:hint="  founded"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+
+                <TextView
+                    android:id="@+id/location_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/location_one_test"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/location_one_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_size"
+                    android:hint="  size"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+
+                <TextView
+                    android:id="@+id/mail_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Email"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/location_one_size"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/mail_company_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mail_company"
+                    android:hint="  Company Email"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/mail_company_one"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pass_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pass"
+                    android:hint="  Password"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+
+                <TextView
+                    android:id="@+id/reg_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By Signing up you agree to the JobMaster Terms of service   and Cookie Policy"
+                    android:layout_below="@+id/pass_two"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/btnsignup_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reg_two"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginblue"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp">
+
+                </Button>
+
+                <TextView
+                    android:id="@+id/or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Or"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/btnsignup_company"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/individual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up as an Individual"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/or"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#2952C8">
+
+                </TextView>
+
+
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

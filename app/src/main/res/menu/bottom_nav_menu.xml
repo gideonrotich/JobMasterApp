@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home"
+            android:iconTint="@android:color/black"
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_user"
+            android:title="@string/menu_gallery"
+            android:iconTint="@android:color/black"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_add"
+            android:title="@string/menu_slideshow"
+            android:iconTint="@android:color/black"/>
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/share_this_app"
+            android:iconTint="@android:color/black"
+
+            />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_like"
+            android:title="@string/rate_us"
+            android:iconTint="@android:color/black"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_information"
+            android:title="@string/about"
+            android:iconTint="@android:color/black"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nyuma"
+    tools:context=".employerHome">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/yes"
+        android:background="@color/giddy">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employer Site"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/giddy"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="14dp"
+            >
+
+        </TextView>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/yes">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi Username"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/kab"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are in the right place to hire qualified persons.Post a job now for free"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/kabtwo"
+            android:layout_below="@id/kab"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Post Job"
+            android:layout_marginTop="98dp"
+            android:textSize="14sp"
+            android:id="@+id/posthustleme"
+            android:background="@drawable/edittext"
+            android:backgroundTint="@color/giddy"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp">
+
+        </Button>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#817F7F"
+            android:id="@+id/arsenal"
+            android:layout_below="@+id/posthustleme"
+            android:layout_marginTop="10dp">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arsenal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:id="@+id/chelsea"
+            android:textColor="@color/black"
+            android:text="One Stop Jobs destinations">
+
+        </TextView>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/chelsea"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/manu"
+            android:src="@drawable/ic_group_17">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chelsea"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/manu"
+            android:layout_marginLeft="30dp"
+            android:textSize="18sp"
+            android:id="@+id/chelseafc"
+            android:textColor="@color/black"
+            android:text="Easily post by yourself">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chelseafc"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/manu"
+            android:layout_marginLeft="30dp"
+            android:textSize="14sp"
+            android:id="@+id/leicester"
+            android:textColor="#515151"
+            android:text="Post all your jobs,edit your posts,contact applicants,saved preffered jobseeker profiles">
+
+        </TextView>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#817F7F"
+            android:id="@+id/arsenalfc"
+            android:layout_below="@+id/leicester"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        </View>
+
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/arsenalfc"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/manuone"
+            android:src="@drawable/ic_group_14">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arsenalfc"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/manuone"
+            android:layout_marginLeft="30dp"
+            android:textSize="18sp"
+            android:id="@+id/chelseafcone"
+            android:textColor="@color/black"
+            android:text="Create a job ad">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chelseafcone"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/manu"
+            android:layout_marginLeft="30dp"
+            android:textSize="14sp"
+            android:id="@+id/leicesterone"
+            android:textColor="#515151"
+            android:text="Our step-by-step guide makes posting your job ad quick and easy">
+
+        </TextView>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#817F7F"
+            android:id="@+id/arsenalfcone"
+            android:layout_below="@+id/leicesterone"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        </View>
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/arsenalfcone"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/manuonetwo"
+            android:src="@drawable/ic_group_15">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arsenalfcone"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/manuonetwo"
+            android:layout_marginLeft="30dp"
+            android:textSize="18sp"
+            android:id="@+id/chelseafconetwo"
+            android:textColor="@color/black"
+            android:text="Manage your candidates">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chelseafconetwo"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/manuonetwo"
+            android:layout_marginLeft="30dp"
+            android:textSize="14sp"
+            android:id="@+id/leicesteronetwo"
+            android:textColor="#515151"
+            android:text="We make it easy for you to identify the best candidates applyinfg for your role">
+
+        </TextView>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#817F7F"
+            android:id="@+id/arsenalfconetwo"
+            android:layout_below="@+id/leicesteronetwo"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        </View>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

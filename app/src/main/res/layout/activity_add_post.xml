@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AddPostActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar_post"
+        android:background="@color/darkdarkblue">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textColor="@android:color/white"
+                android:textSize="16sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:id="@+id/save_new_post"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="260dp">
+            </TextView>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/bar_post"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:padding="20dp"
+                android:id="@+id/description"
+                android:textColor="@android:color/black"
+                android:hint="Write something about your post..."
+                android:textColorHint="@android:color/black"
+                android:background="@drawable/ic_rectangle_loginbtn"
+                android:layout_marginLeft="20dp">
+
+            </EditText>
+
+            <ImageView
+                android:id="@+id/image_post"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center">
+
+            </ImageView>
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

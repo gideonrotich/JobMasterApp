@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".testingActivity"
+    android:background="#ffffff"
+    android:id="@+id/ll">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/dono"
+            android:background="@color/colorDividerView">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share your Hustle"
+            android:textSize="20sp"
+            android:id="@+id/haha"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/dono">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="140dp"
+            android:background="@drawable/ic_recvii"
+            android:layout_centerInParent="true"
+
+            android:layout_below="@+id/haha"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Do you have a hustle?"
+                android:textColor="@color/black"
+                android:id="@+id/hustk"
+                android:paddingTop="4dp"
+                android:textSize="20sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post your hustle for free \n on this app"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/hustk_text"
+                android:layout_marginTop="40dp"
+                android:textSize="18sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post Hustle "
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/darkdarkblue"
+                android:id="@+id/hustk_text_post"
+                android:layout_marginTop="100dp"
+                android:textSize="17sp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:src="@drawable/ic_hust"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="0dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/notwo">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/donotwo"
+            android:background="@color/colorDividerView">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Posting"
+            android:textSize="20sp"
+            android:id="@+id/hahatwo"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/donotwo">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="140dp"
+            android:background="@drawable/ic_recvii"
+
+            android:layout_below="@+id/hahatwo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Are you an Employer?"
+                android:textColor="@color/black"
+                android:id="@+id/hustktwo"
+                android:paddingTop="4dp"
+                android:textSize="20sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post jobs on this platform \n without paying\n any fee"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/hustk_texttwo"
+                android:layout_marginTop="40dp"
+                android:textSize="18sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post Job "
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/darkdarkblue"
+                android:id="@+id/hustk_text_posttwo"
+                android:layout_marginTop="100dp"
+                android:textSize="17sp">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:src="@drawable/ic_group_15"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="0dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/notwothree">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/donotwothree"
+                android:background="@color/colorDividerView">
+
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advertise Here"
+                android:textSize="20sp"
+                android:id="@+id/hahatwothree"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/donotwothree">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="140dp"
+                android:background="@drawable/ic_recvii"
+
+                android:layout_below="@+id/hahatwothree"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Looking to promote your products"
+                    android:textColor="@color/black"
+                    android:id="@+id/hustktwothree"
+                    android:paddingTop="4dp"
+                    android:textSize="20sp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact the support team if you \n want to grow\n your business"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/hustk_texttwothree"
+                    android:layout_marginTop="40dp"
+                    android:textSize="18sp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkdarkblue"
+                    android:id="@+id/hustk_text_posttwothree"
+                    android:layout_marginTop="100dp"
+                    android:textSize="17sp">
+
+                </TextView>
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/ic_group_16"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="0dp">
+
+                </ImageView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</HorizontalScrollView>
+
+

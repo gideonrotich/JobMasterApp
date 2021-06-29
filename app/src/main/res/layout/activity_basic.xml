@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4BA6EC"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/white"
+
+        android:elevation="4dp"
+        tools:context=".EditprofileFragment">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save_info"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="28dp">
+
+        </TextView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/onee"
+            app:civ_border_width="1dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/profile_image_settings"
+            android:layout_centerHorizontal="true">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image_settings"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/change_image"
+            android:text="Change Image"
+            android:textSize="16sp"
+            android:textColor="@android:color/black">
+
+        </TextView>
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/change_image"
+            android:layout_marginTop="24dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="4dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/headline_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headline"
+            android:hint="Full name"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <TextView
+            android:id="@+id/highest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/headline_text"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="4dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/highest_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/highest"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <TextView
+            android:id="@+id/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Category"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/highest_text"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="4dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/current_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/current"
+            android:hint="Mobile Number"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+
+
+
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+

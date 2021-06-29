@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/top"
+    android:layout_height="match_parent"
+    tools:context=".verificationActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:elevation="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center">
+
+
+
+
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verification Details"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/change_category_logo"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/email_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Fullname"
+                    android:layout_below="@+id/email_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/verificationname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_text_text"
+                    android:hint="  User Full name"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+
+
+
+                <Button
+                    android:id="@+id/postuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/verificationname"
+                    android:text="Verify User"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginblue"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp">
+
+                </Button>
+
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

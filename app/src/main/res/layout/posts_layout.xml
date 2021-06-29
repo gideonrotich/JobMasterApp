@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+              android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"
+
+            app:cardPreventCornerOverlap="true"
+            app:cardBackgroundColor="@android:color/white">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/twoo"
+                android:layout_marginTop="14dp"
+                android:id="@+id/pichayako"
+                android:layout_marginLeft="10dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/pichayako"
+                android:layout_marginLeft="1dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:id="@+id/fullname_post"
+
+                android:layout_toRightOf="@+id/pichayako">
+
+            </TextView>
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/check"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toEndOf="@+id/fullname_post"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/verification"
+                    android:visibility="gone"
+
+                    android:layout_toRightOf="@+id/fullname_post"
+                    >
+
+                </ImageView>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/menusheet"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/menutwo">
+
+                    </ImageView>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/pichayako"
+                    android:layout_marginLeft="1dp"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:id="@+id/proffesion_post"
+                    android:layout_below="@+id/fullname_post"
+                    android:layout_toRightOf="@+id/pichayako">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/pichayako"
+                    android:layout_marginLeft="1dp"
+                    android:text="recently"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:id="@+id/time_post"
+                    android:layout_below="@+id/proffesion_post"
+                    android:layout_toRightOf="@+id/pichayako">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/time_post"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/text_post"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:text="">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_below="@+id/text_post"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/white"
+                    android:id="@+id/picture_post"
+                    android:layout_marginBottom="2dp"
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/likes"
+                    android:layout_marginTop="17dp"
+                    android:layout_toEndOf="@id/pichalike"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@id/picture_post"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/pichalike">
+
+                </TextView>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/picture_post"
+                    android:id="@+id/pichalike"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_likeone">
+
+                </ImageView>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/picture_post"
+                    android:id="@+id/pichacomment"
+                    android:backgroundTint="@android:color/black"
+                    android:layout_toEndOf="@+id/likes"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/ic_comment"
+                    android:layout_toRightOf="@+id/likes">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/pichacomment"
+                    android:layout_below="@id/picture_post"
+                    android:text="Comment"
+                    android:id="@+id/textcomment"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/pichacomment">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/picture_post"
+                    android:id="@+id/pichashare"
+                    android:layout_toEndOf="@id/textcomment"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_shareone"
+                    android:layout_toRightOf="@id/textcomment">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/pichashare"
+                    android:layout_below="@id/picture_post"
+                    android:text="Share"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/textshare"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/pichashare">
+
+                </TextView>
+
+                <View
+                    android:id="@+id/lainicomment"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/textshare"
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/totalcomments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lainicomment"
+                    android:text="Be the first to comment on this"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp">
+
+                </TextView>
+
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

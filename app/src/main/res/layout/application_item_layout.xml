@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/nyuma"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+
+
+
+        app:cardElevation="4dp"
+        android:id="@+id/jild"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application Details"
+                android:textColor="@color/darkdarkblue"
+                android:textSize="16sp"
+                android:id="@+id/appl"
+                android:layout_centerHorizontal="true"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appl"
+                android:text="Job Title :"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:id="@+id/title_app"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appl"
+                android:text="Software Developer"
+                android:textColor="@color/darkdarkblue"
+                android:textSize="16sp"
+                android:id="@+id/title_app_text"
+                android:layout_toRightOf="@+id/title_app"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_app"
+                android:text="Company Name :"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:id="@+id/title_app_one"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_app"
+                android:text="Safaricom PLC"
+                android:textColor="@color/darkdarkblue"
+                android:textSize="16sp"
+                android:id="@+id/title_app_text_one"
+                android:layout_toRightOf="@+id/title_app_one"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_app_one"
+                android:text="Location :"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:id="@+id/title_app_two"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_app_one"
+                android:text="Nairobi"
+                android:textColor="@color/darkdarkblue"
+                android:textSize="16sp"
+                android:id="@+id/title_app_text_two"
+                android:layout_toRightOf="@+id/title_app_two"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to apply"
+                android:textColor="@color/darkdarkblue"
+                android:textSize="16sp"
+                android:id="@+id/appl_io"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/title_app_text_two"
+                android:layout_centerHorizontal="true"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send your email to jobmaster@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/appl_io_one"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/appl_io"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

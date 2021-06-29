@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".JobpostingActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_rectangle_login"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/bag"
+                    app:civ_border_width="1dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/profile_image_job"
+                    android:layout_centerHorizontal="true">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_image_job"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/change_image_job"
+                    android:text="Change Company Logo"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Details"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/change_image_job"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/email_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Title"
+                    android:layout_below="@+id/email_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/jobtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_text_text"
+                    android:hint="  Job Title"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+                <TextView
+                    android:id="@+id/companytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name"
+                    android:layout_below="@+id/jobtitle"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/companyedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/companytext"
+                    android:hint="  Company Name"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+                <TextView
+                    android:id="@+id/tech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Category"
+                    android:layout_below="@+id/companyedit"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/techtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tech"
+                    android:background="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/wapi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/techtext"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Description"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/wapi"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/jobdescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/password_text"
+                    android:hint=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/password_confirm_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Responsibilities"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/jobdescription"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/responsibilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/password_confirm_two"
+                    android:hint=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+
+                <TextView
+                    android:id="@+id/password_tttt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Required Skills"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/responsibilities"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password_tttt"
+                    android:hint="  Required Skills"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/reg_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Required Education qualifications"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/skills"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reg_one"
+                    android:hint="  Education"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/education"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/joblocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location"
+                    android:hint="  Location"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+                <TextView
+                    android:id="@+id/sala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salary"
+                    android:layout_below="@+id/joblocation"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/salatext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sala"
+                    android:hint="  eg Confidential"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/mail_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Type"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/salatext"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/jobtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mail_company"
+                    android:hint="  Job Type eg. fulltime"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mode of Application"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/jobtype"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="4dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/deadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pass"
+                    android:hint="  Email to receive applications"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </EditText>
+
+
+                <TextView
+                    android:id="@+id/reg_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By posting job you agree to the JobMaster Terms of service   and Cookie Policy"
+                    android:layout_below="@+id/deadline"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/postjob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reg_two"
+                    android:text="Post Job"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:background="@drawable/ic_rectangle_loginblue"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp">
+
+                </Button>
+
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/nyuma"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_height="160dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Software Developer"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            >
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/ukweli"
+            android:src="@drawable/ic_baseline_star_border_24"
+            android:tint="#6C6A6A">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_job"
+            android:layout_marginLeft="12dp"
+            android:text="Full Time"
+            android:layout_marginTop="4dp"
+            android:id="@+id/time"
+            android:textColor="@android:color/black"
+            android:textSize="14sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_job"
+            android:layout_marginLeft="8dp"
+            android:text="|"
+            android:layout_toEndOf="@+id/time"
+            android:layout_marginTop="4dp"
+            android:id="@+id/sdjhjh"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/time">
+
+        </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:id="@+id/logo"
+            android:layout_height="80dp"
+            android:layout_below="@+id/time"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/bag"
+            android:layout_marginLeft="6dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safaricom PLC"
+            android:id="@+id/companyname"
+            android:layout_toEndOf="@+id/logo"
+            android:layout_toRightOf="@+id/logo"
+            android:layout_below="@+id/time"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="@color/darkdarkblue"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="17dp"
+            android:src="@drawable/check"
+            android:layout_below="@+id/time"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/companyname"
+            android:layout_marginTop="33dp"
+
+
+            android:layout_toRightOf="@+id/companyname"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/industry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@+id/sdjhjh"
+            android:text="Technology"
+
+            android:layout_toRightOf="@+id/time"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/text_job"
+            android:textColor="@android:color/black"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_job"
+            android:layout_marginLeft="8dp"
+            android:text="|"
+            android:layout_toEndOf="@+id/industry"
+            android:layout_marginTop="4dp"
+            android:id="@+id/hale"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/time">
+
+        </TextView>
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/hale"
+            android:layout_below="@+id/text_job"
+            android:text="80k/month"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/time"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/logo"
+            android:layout_below="@+id/companyname"
+            android:text="Nairobi"
+            android:id="@+id/place"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/logo"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="2dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyname"
+            android:layout_marginLeft="8dp"
+            android:text="|"
+            android:layout_toEndOf="@+id/place"
+            android:layout_marginTop="2dp"
+            android:id="@+id/mbili"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/time">
+
+        </TextView>
+        <TextView
+            android:id="@+id/origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/mbili"
+            android:layout_below="@+id/companyname"
+            android:text="Kenya"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/mbili"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="2dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="128dp"
+            android:layout_marginRight="10dp">
+
+        </TextView>
+
+
+
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

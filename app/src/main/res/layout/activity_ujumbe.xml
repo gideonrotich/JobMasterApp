@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".ujumbeActivity">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logofour"
+            android:id="@+id/pichasita"
+            >
+
+        </ImageView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/pichasita"
+            android:id="@+id/lainisita"
+            android:background="@android:color/black">
+
+        </View>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/lainisita"
+            android:src="@drawable/facebook"
+            android:id="@+id/facebook"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like us on Facebook"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/likefacebook"
+            android:layout_toEndOf="@+id/facebook"
+            android:layout_toRightOf="@+id/facebook"
+            android:layout_below="@+id/lainisita"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/facebook"
+            android:id="@+id/lainisaba"
+            android:layout_marginLeft="110dp"
+            android:background="@android:color/black">
+
+        </View>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/lainisaba"
+            android:src="@drawable/twitter"
+            android:id="@+id/twitter"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow us on Twitter"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/liketwitter"
+            android:layout_toEndOf="@+id/twitter"
+            android:layout_toRightOf="@+id/twitter"
+            android:layout_below="@+id/lainisaba"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/twitter"
+            android:id="@+id/laininane"
+            android:layout_marginLeft="110dp"
+            android:background="@android:color/black">
+
+        </View>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/laininane"
+            android:src="@drawable/download"
+            android:id="@+id/tiktok"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow us on TikTok"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/liketiktok"
+            android:layout_toEndOf="@+id/tiktok"
+            android:layout_toRightOf="@+id/tiktok"
+            android:layout_below="@+id/laininane"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tiktok"
+            android:id="@+id/lainitisa"
+            android:layout_marginLeft="110dp"
+            android:background="@android:color/black">
+
+        </View>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/lainitisa"
+            android:src="@drawable/picfour"
+            android:id="@+id/mail"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/likemail"
+            android:layout_toEndOf="@+id/mail"
+            android:layout_toRightOf="@+id/mail"
+            android:layout_below="@+id/lainitisa"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jobmaster@gmail.com"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/likemailtext"
+            android:layout_below="@+id/likemail"
+            android:layout_toEndOf="@+id/mail"
+            android:layout_toRightOf="@+id/mail"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/mail"
+            android:id="@+id/lainikumi"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/black">
+
+        </View>
+
+    </RelativeLayout>

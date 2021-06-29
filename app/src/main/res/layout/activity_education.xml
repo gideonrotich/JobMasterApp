@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EducationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/yes"
+        android:background="@color/giddy">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education History"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/giddy"
+            android:layout_marginTop="14dp"
+            android:layout_centerHorizontal="true"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/giddywewe"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="20dp"
+           android:layout_alignParentRight="true"
+            >
+
+        </TextView>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@color/nyuma"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/yes"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:id="@+id/tech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Degree Level(required)"
+            android:layout_below="@+id/companyedit"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/techtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tech"
+            android:background="@color/black"
+            android:textSize="16sp"
+            android:spinnerMode="dialog"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/wapi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/techtext"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/jobdescriptioneeh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wapi"
+            android:hint="School"
+            android:padding="6dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="16dp">
+
+        </EditText>
+        <EditText
+            android:id="@+id/jobdescriptionmm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobdescriptioneeh"
+            android:hint="Location"
+            android:padding="6dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="16dp">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/techwaah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start date"
+            android:layout_below="@+id/jobdescriptionmm"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/techtextwaah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/techwaah"
+            android:background="@color/black"
+            android:textSize="16sp"
+            android:spinnerMode="dialog"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/wapiwaah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/techtextwaah"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/techwaahone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End date"
+            android:layout_below="@+id/wapiwaah"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/techtextwaahone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/techwaahone"
+            android:background="@color/black"
+            android:textSize="16sp"
+            android:spinnerMode="dialog"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/wapiwaahone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/techtextwaahone"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".LatestMessagesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/yes"
+        android:elevation="4dp"
+        android:background="@color/white">
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:id="@+id/backk"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/white">
+
+        </ImageView>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/backk"
+            android:layout_toRightOf="@+id/backk"
+            android:layout_marginLeft="22dp"
+            android:text="Search messages"
+            android:id="@+id/btn_search"
+            android:textAlignment="viewStart"
+            android:drawableLeft="@drawable/ic_tafuta"
+            android:drawableTint="@android:color/black"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+
+            android:textColor="@android:color/black"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="10dp"
+            >
+
+        </Button>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/menuone"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@android:color/white">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/add_message"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_add"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@android:color/white"
+            app:tint="@android:color/black">
+
+        </ImageView>
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerview_latest_messages"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/yes">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

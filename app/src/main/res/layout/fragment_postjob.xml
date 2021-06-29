@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".PostjobFragment">
+
+
+
+    <Button
+        android:id="@+id/postjob_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Post Job"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@drawable/ic_rectangle_loginblue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/adbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="View Ads"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@drawable/ic_rectangle_loginblue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/postjob_btn"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+    </Button>
+
+</RelativeLayout>

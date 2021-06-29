@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nyuma"
+    tools:context=".employerProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/ni"
+        android:background="#63108C">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            app:tint="@color/white">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safaricom PLC"
+            android:id="@+id/mpakalininame"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_share"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            app:tint="@color/white">
+
+        </ImageView>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/pichakampuni"
+        android:background="#BFAACA"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ni"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:id="@+id/mamayao"
+        android:text="Safaricom PLC"
+        android:textColor="@color/black"
+        android:textSize="20sp">
+
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#807D7D"
+        android:id="@+id/kamp"
+        android:layout_below="@+id/pichakampuni"
+        android:layout_marginTop="16dp">
+
+    </View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/kamp"
+        android:layout_marginTop="6dp"
+        android:id="@+id/jeje"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:id="@+id/child"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="30dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jobs"
+            android:id="@+id/childone"
+            android:layout_below="@+id/child"
+            android:textColor="@color/darkdarkblue"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginLeft="28dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnsignupchild"
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:text="Follow"
+            android:textColor="@color/white"
+            android:layout_marginTop="6dp"
+            android:textAllCaps="false"
+            android:layout_toRightOf="@+id/childone"
+            android:textSize="16sp"
+            android:backgroundTint="#0C42D6"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:layout_marginLeft="20dp"
+            android:padding="1dp"
+            android:layout_marginRight="20dp"
+            >
+
+        </Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#807D7D"
+            android:id="@+id/kamplion"
+            android:layout_below="@+id/btnsignupchild"
+            android:layout_marginTop="16dp">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kamplion">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cominfo"
+                android:text="Company Info"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cominfo"
+                android:id="@+id/kamoja"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Website"
+                    android:textSize="16sp"
+                    android:id="@+id/web"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="www.jobmaster.com"
+                    android:id="@+id/webme"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="76dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kamoja"
+                android:id="@+id/kambili"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Headquarters"
+                    android:textSize="16sp"
+                    android:id="@+id/webkamoja"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chantilly, VA"
+                    android:id="@+id/webmek"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kambili"
+                android:id="@+id/katatu"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Founded"
+                    android:textSize="16sp"
+                    android:id="@+id/websasa"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1996"
+                    android:id="@+id/webmefu"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/katatu"
+                android:id="@+id/kanne"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size"
+                    android:textSize="16sp"
+                    android:id="@+id/webmoo"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="51 to 200 employees"
+                    android:id="@+id/webmemoo"
+                    android:layout_marginStart="100dp"
+                    android:textColor="@color/black"
+
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kanne"
+                android:id="@+id/katano"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Industry"
+                    android:id="@+id/webmew"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="information technology"
+                    android:id="@+id/webmemew"
+                    android:layout_marginStart="74dp"
+                    android:textColor="@color/black"
+
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/katano"
+                android:id="@+id/kasita"
+                android:layout_marginTop="14dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jskdjskjdksjdksjdksjdksjdksjdksjdksjdksjdksjdksjdksjdksjddskjksdjksjdksjdksjdksjksjksjksjdksjksjksjdkjdkdjksjksjdskjdksjksdjksdjdskjkjdsjdsjdsjdsjjdsjdsjdsk"
+                    android:id="@+id/webtu"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="10dp"
+                   >
+
+                </TextView>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#807D7D"
+                android:id="@+id/kampww"
+                android:layout_below="@+id/kasita"
+                android:layout_marginTop="20dp">
+
+            </View>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

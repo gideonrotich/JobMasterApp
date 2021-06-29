@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MyFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:id="@+id/yes"
+        android:background="@color/giddy">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/onee"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/civii"
+            app:civ_border_width="10dp"
+            app:civ_border_color="#621988">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Logout"
+            android:id="@+id/out"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="18dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/civii"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="User Name"
+            android:id="@+id/you"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/you"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Software Developer"
+            android:id="@+id/youtwo"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/yeye"
+        android:layout_below="@+id/yes"
+        android:background="@color/nyuma">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCOUNT"
+            android:textSize="16sp"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/yeye">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lili"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_person_outline_24"
+            android:layout_marginTop="2dp"
+            android:tint="@color/black"
+            android:layout_marginLeft="10dp">
+
+        </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:text="Settings"
+                android:id="@+id/accountinfo"
+                android:textSize="14sp"
+                android:textColor="#423D3D">
+
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BAB6B6"
+        android:layout_below="@+id/lili"
+        android:layout_marginTop="2dp">
+    </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lilione"
+            android:layout_below="@+id/lili"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_business_center_24"
+                android:layout_marginTop="10dp"
+                android:tint="@color/black"
+                android:layout_marginLeft="14dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="18dp"
+                android:text="My Profile"
+                android:id="@+id/postkazi"
+                android:textSize="14sp"
+                android:textColor="#423D3D">
+
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BAB6B6"
+            android:layout_below="@+id/lilione"
+            android:layout_marginTop="8dp">
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lilitwo"
+            android:layout_below="@+id/lilione"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_information"
+                android:layout_marginTop="10dp"
+                android:tint="@color/black"
+                android:layout_marginLeft="16dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="25dp"
+                android:text="About"
+                android:id="@+id/ujumbe"
+                android:textSize="14sp"
+                android:textColor="#423D3D">
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BAB6B6"
+            android:layout_below="@+id/lilitwo"
+            android:layout_marginTop="2dp">
+        </View>
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/yeyeone"
+            android:layout_below="@+id/lilitwo"
+            android:background="@color/nyuma">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SETTINGS"
+                android:textSize="16sp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lilithree"
+            android:layout_below="@+id/yeyeone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_marginTop="2dp"
+                android:tint="@color/black"
+                android:layout_marginLeft="16dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="18dp"
+                android:text="Rate in Playstore"
+                android:id="@+id/ccategory"
+                android:textSize="14sp"
+                android:textColor="#423D3D">
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BAB6B6"
+            android:layout_below="@+id/lilithree"
+            android:layout_marginTop="1dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lilifour"
+            android:layout_below="@+id/lilithree"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_share"
+                android:layout_marginTop="2dp"
+                android:tint="@color/black"
+                android:layout_marginLeft="16dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="18dp"
+                android:text="Share App"
+                android:id="@+id/ffeed"
+
+                android:textSize="14sp"
+                android:textColor="#423D3D">
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BAB6B6"
+            android:id="@+id/paul"
+            android:layout_below="@+id/lilifour"
+            android:layout_marginTop="1dp">
+        </View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/paul"
+            android:background="@color/nyuma">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:id="@+id/versionn"
+                android:layout_marginTop="12dp"
+                android:textColor="#A8A3A3"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/versionn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Terms of service  |  Privacy policy"
+                android:textColor="#5A5959">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

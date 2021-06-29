@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LastFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yes"
+        android:layout_marginBottom="14dp"
+        android:background="@color/white">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JobMaster"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/darkdarkblue"
+            android:layout_marginTop="8dp"
+            >
+
+        </TextView>
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/opt"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@android:color/white">
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/what"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/opt">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job title,keywords, or company"
+            android:textSize="12sp"
+            android:textColor="#878484"
+            android:id="@+id/jobtitle"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/what">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/wditwhat"
+            android:layout_below="@+id/jobtitle"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:hint="Job title, keywords, or company"
+            android:textColorHint="#878484"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/wditwhat"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:text="Find Jobs"
+            android:id="@+id/hao"
+            android:textAllCaps="false"
+            android:background="@drawable/ic_rectangle_loginblue"
+            android:layout_marginRight="20dp">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+<!--    search result recycler view-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_tafuta"
+        android:layout_width="match_parent"
+        android:scrollbars="horizontal"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/yes"
+        android:layout_marginBottom="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<!--    End of search result fragmet-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_home_t"
+        android:layout_width="match_parent"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/recycler_view_tafuta"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
+</ScrollView>

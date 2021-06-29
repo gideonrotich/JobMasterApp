@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimarytwo">#E3E2E6</color>
+    <color name="colorPrimaryDark">#1E88E5</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#CDCBCB</color>
+    <color name="darkblue">#189AAA</color>
+    <color name="darkdarkblue">#1A3FAC</color>
+    <color name="shimmer">#C4CBCF</color>
+    <color name="shimmertop">#D1D3D3</color>
+    <color name="colorDividerView">#ECECEC</color>
+    <color name="lightWhite">#1B2F63</color>
+    <color name="white">#fff</color>
+    <color name="black">#000000</color>
+    <color name="top">#9CCBF1</color>
+    <color name="nyuma">#F1F6F6</color>
+    <color name="giddy">#36054E</color>
+
+
+
+
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>

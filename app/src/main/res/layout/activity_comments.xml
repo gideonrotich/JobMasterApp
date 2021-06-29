@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/yes"
+        android:elevation="4dp"
+        android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/proff"
+            android:src="@drawable/twoo">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/proff"
+            android:layout_toRightOf="@+id/proff"
+            android:layout_marginLeft="22dp"
+            android:text="Search Jobs"
+            android:id="@+id/btn_search"
+            android:textAlignment="viewStart"
+            android:drawableLeft="@drawable/ic_tafuta"
+            android:drawableTint="@android:color/black"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="10dp"
+            >
+
+        </Button>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@android:color/white">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yes"
+        android:id="@+id/rev">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardBackgroundColor="@android:color/white">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/text_post_comment"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:text="">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="164dp"
+                    android:layout_below="@+id/text_post_comment"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/white"
+                    android:id="@+id/post_image_comment"
+                    android:layout_marginBottom="2dp"
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/post_image_comment"
+                    android:text="Comments"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/tec"
+                    android:layout_marginLeft="4dp"
+                    android:padding="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tec"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/commentRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:padding="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_comment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_personone">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <EditText
+            android:id="@+id/add_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_image_comment"
+            android:hint="Write your comment.."
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textColorHint="@android:color/black"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/post_comment"
+            android:layout_marginEnd="6dp">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/post_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Comment"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

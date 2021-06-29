@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nyuma"
+    tools:context=".introductionactivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yes"
+        android:layout_marginBottom="14dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JobMaster"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:id="@+id/lala"
+            android:layout_marginBottom="12dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/giddy"
+            android:layout_marginTop="50dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find jobs which fits your career"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/lalasalama"
+            android:layout_below="@+id/lala"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
+            >
+
+        </TextView>
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:tint="@color/giddy"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lalasalama"
+            android:src="@drawable/olisikiawapi"
+           >
+
+        </ImageView>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/lalasalama"
+            android:text="Continue with Email"
+
+            android:backgroundTint="@color/giddy"
+            android:textAllCaps="false"
+            android:drawablePadding="14dp"
+            android:background="@drawable/ic_rectangle_loginblue"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:id="@+id/emailid"
+            android:layout_marginTop="170dp">
+
+        </Button>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_group_34"
+            android:layout_below="@+id/emailid"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By continuing you agree to JobMaster \n privacy policy and terms of service"
+            android:textSize="14sp"
+
+            android:id="@+id/tterms"
+            android:layout_marginBottom="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#777474"
+            android:padding="20dp"
+            android:layout_marginTop="40dp"
+            >
+
+        </TextView>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".HustleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/yes"
+        android:background="@color/giddy">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Hustle Page"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/giddy"
+            android:layout_marginTop="14dp"
+            android:layout_centerHorizontal="true"
+            >
+
+        </TextView>
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/alert"
+        app:cardBackgroundColor="@color/white"
+        android:layout_below="@+id/yes"
+        android:layout_marginTop="4dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Hustle"
+            android:textSize="22sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is my hustle page.You can see interesting services offered by people and also post one too"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black">
+
+        </TextView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Post Hustle"
+            android:layout_marginTop="98dp"
+            android:textSize="14sp"
+            android:id="@+id/posthustle"
+            android:background="@drawable/edittext"
+            android:backgroundTint="@color/giddy"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp">
+
+        </Button>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_post"
+        android:visibility="visible"
+        android:layout_below="@+id/alert"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

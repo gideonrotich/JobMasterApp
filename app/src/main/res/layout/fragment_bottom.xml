@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nyuma"
+    tools:context=".BottomFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/yes"
+        android:background="@color/giddy">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:src="@drawable/back"
+            android:id="@+id/goback"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            app:tint="@color/white">
+
+        </ImageView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/goback"
+            android:layout_marginLeft="20dp"
+            android:hint="Job Title or Keyword"
+            android:layout_marginTop="22dp"
+            android:id="@+id/wordtaf"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@color/giddy"
+            android:autofillHints="job title"
+            android:inputType="text">
+
+        </EditText>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/quantum_ic_search_grey600_24"
+            android:id="@+id/taf"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            app:tint="@color/white">
+
+        </ImageView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yes"
+        android:visibility="gone"
+        android:id="@+id/mmm"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:src="@drawable/quantum_ic_search_grey600_24"
+            android:id="@+id/tafme"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            app:tint="@color/giddy">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tafme"
+            android:text="Sorry, we didn't find your job"
+            android:textSize="16sp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/www"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/www"
+            android:text="Please adjust your criteria and try again"
+            android:textSize="16sp"
+            android:id="@+id/wwweee"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_modcom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@+id/yes"
+        android:layout_marginBottom="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
