@@ -7,6 +7,8 @@
 
 
 # JobMaster - Job search,vacancies and Employment
+![code size](https://img.shields.io/github/languages/code-size/GideonRotich/JobMasterApp?style=plastic)
+[![](https://img.shields.io/badge/author-Gideon%20Rotich-green.svg?style=plastic)](https://github.com/GideonRotich)
 
 JobMaster has  jobs in real time,sourced from job boards,company websites and industry associations
 
