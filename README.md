@@ -10,7 +10,7 @@
 
 JobMaster has  jobs in real time,sourced from job boards,company websites and industry associations
 
-The backend is written using Kotlin. See [jobmaste-api](https://github.com/GideonRotich/JobMasterApp).
+The backend is written using Kotlin. See [jobmaster-api](https://github.com/GideonRotich/JobMasterApp).
 
 ## Features
 
