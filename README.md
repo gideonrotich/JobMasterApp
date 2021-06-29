@@ -2,8 +2,7 @@
 	<img
 		width="150"
 		alt="Logo"
-		src="![giddy](https://user-images.githubusercontent.com/63802031/123842340-55b0ec00-d919-11eb-8db0-28e17c50fc07.png)
-">
+		src="https://user-images.githubusercontent.com/63802031/123842340-55b0ec00-d919-11eb-8db0-28e17c50fc07.png"
 </p>
 
 
