@@ -10,14 +10,14 @@
 
 JobMaster has  jobs in real time,sourced from job boards,company websites and industry associations
 
-The backend is written using Kotlin. See [swayy-api](https://github.com/GideonRotich/Swayy-Android).
+The backend is written using Kotlin. See [jobmaste-api](https://github.com/GideonRotich/JobMasterApp).
 
 ## Features
 
-- 100% Kotlin.
-- Firebase Authentication
+- Simple and fast job search
+- Fast job applications with quick apply
 - Retrofit with Coroutines
-- Room for local data storage.
+- earch job by keyword,role title,company.
 - password Authentication.
 - Firebase messaging for notifications.
 - Picasso image library
@@ -30,7 +30,7 @@ The backend is written using Kotlin. See [swayy-api](https://github.com/GideonRo
 Used for messaging.
 
 1. Create an project on [Firebase](https://console.firebase.google.com/).
-2. Add an application `com.example.swayy`.
+2. Add an application `com.example.jobmaster`.
 
 
 ## Installation
@@ -53,7 +53,7 @@ Used for messaging.
 
 ## Download
 
-<a href='https://play.google.com/store/apps/details?id=com.example.swayy'>
+<a href='https://play.google.com/store/apps/details?id=com.example.jobmaster>
 ​    <img alt='Get it on Google Play' 
 ​         src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
 ​         height="116" width="300"/>
