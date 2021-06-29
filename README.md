@@ -6,9 +6,9 @@
 </p>
 
 
-# Swayy - Buy and sell
+# JobMaster - Job search,vacancies and Employment
 
-A buying and selling app made using kotlin.A user can create his/her own shop online to sell products.
+JobMaster has  jobs in real time,sourced from job boards,company websites and industry associations
 
 The backend is written using Kotlin. See [swayy-api](https://github.com/GideonRotich/Swayy-Android).
 
